@@ -20,9 +20,5 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-
-### Bower ###
-bower_components
-
 ### Gulp ###
 node_modules
