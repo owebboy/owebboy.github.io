@@ -3,6 +3,9 @@ var concat = require('gulp-concat');
 var minify = require('gulp-minify-css');
 
 gulp.task('default', function() {
+	gulp.src('/.js/*.js')
+		.pipe(concat('o.js'))
+		.pipe(gulp.dest('./'));
 	gulp.src('./css/*.css')
 		.pipe(concat('o.css'))
 		.pipe(minify())
