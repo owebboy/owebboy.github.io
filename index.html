@@ -7,7 +7,7 @@
 	<meta name="description" content="owebboy creates websites that look great!">
 	<title>o's site</title>
 	<link rel="stylesheet" href="o.css">
-	<link rel="stylesheet" href="https://owebboy.com/lattice/lattice.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	
 	<style>
 	dt {
@@ -21,16 +21,19 @@
 	.little {
 		margin-top: 1em;
 	}
-	header {
-		text-align: center;
-	}
 	.header {
 		margin-bottom: 20px;
 	}
-	@media (max-width: 30em) {
-		.bit-25, .bit-75 {
-			width: 100%
-		}
+	.title {
+		margin: 0;
+	}
+	.social {
+		font-size: 2em;
+		border: 0;
+	}
+	
+	.social:hover {
+		color: #EAD98B;
 	}
 	</style>
 	
@@ -44,13 +47,13 @@
     
 </head>
 <body>
-	<header class="one ptxxl">
-		<h1 class="uppercase lucite-green">Oliver Pope</h1>
-		<h5><a href="//twitter.com/owebboy">@owebboy</a></h5>
+	<header class="bg-custard one paxxl">
+		<h1 class="title uppercase">Oliver Pope</h1>
+		<p class="h6 uppercase">Computer Scientist</p>
 	</header>
 	
 	<article class="three-fourths">
-		<h3>Web Developer Extraordinaire</h3>
+		<h4>Web Developer Extraordinaire</h4>
 		<p class="little">As a web developer, I create websites that people will enjoy using as much as I do making them. Building a website is not as easy as you may think. It's like painting a picture; it requires a lot of thought to design and develop websites. Every web designer has a certain design philosophy, just like every painter has a certain way of painting. Here is my philosophy on modern web development.</p>
 		
 		<p>When looking at a recent website of mine (such as this one), you notice that I don't use black for the color of my text. Instead, I use a lighter gray for pargraphs, headings, and other standard website elements. This allows other multimedia elements, like photos, videos, and even links, to pop out and come to life in the sea of grayness. Also, it makes the design very unique and clean.</p>
@@ -61,7 +64,7 @@
 	</article>
 	
 	<section class="one-fourth">
-		<h3>Projects</h3>
+		<h4>Projects</h4>
 		<dl>
 			<dt><a href="//owebboy.com/blog">Blog</a></dt>
 			<dd>My personal blog where I write about how life works.</dd>
@@ -84,6 +87,10 @@
 			<dt><a href="//hashtag.owebboy.com">Hashtags</a></dt>
 			<dd>An example to see how awesome <a href="//www.mongodb.org">mongodb</a> and <a href="//mongoosejs.com">mongoose</a> are</dd>
 		</dl>
-	</article>
+	</section>
+	
+	<footer class="one">
+		<p><a class="social" href="//twitter.com/owebboy"><i class="fa fa-twitter"></i></a> <a class="social" href="//github.com/owebboy"><i class="fa fa-github"></i></a> <a class="social" href="//codepen.io/owebboy"><i class="fa fa-codepen"></i></a></p>
+	</footer>
 </body>
 </html>
