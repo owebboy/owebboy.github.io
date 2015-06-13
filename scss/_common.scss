@@ -1,0 +1,15 @@
+// common
+
+html {
+	text-align: center;
+	background: #EADC86;
+	height: 100vh;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	animation: hue 10s;
+}
+
+@keyframes hue {
+	to {
+		filter: hue-rotate(360deg);
+	}
+}
