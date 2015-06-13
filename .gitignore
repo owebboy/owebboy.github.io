@@ -24,3 +24,4 @@ Temporary Items
 node_modules
 
 config.codekit
+scss/.sass-cache
