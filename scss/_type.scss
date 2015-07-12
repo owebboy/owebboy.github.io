@@ -6,6 +6,9 @@ h1 {
 	margin: 0;
 	letter-spacing: -10px;
 	color: $logo;
+	@media screen and (max-width: 720px) {
+		letter-spacing: -1px;
+	}
 }
 
 p {
