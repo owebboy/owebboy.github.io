@@ -1,15 +1,29 @@
 // common
 
 html {
-	text-align: center;
-	background: #EADC86;
+	background: $bg;
 	height: 100vh;
+	color: $fg;
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-	animation: hue 10s;
+	padding: 60px;
 }
 
-@keyframes hue {
-	to {
-		filter: hue-rotate(360deg);
+header, section {
+	margin-bottom: 3em;
+}
+
+article {
+	margin-bottom: 2em;
+}
+
+.description {
+	margin-bottom: 1em;
+}
+
+a {
+	color: $a;
+	transition: .5s all;
+	&:hover {
+		color: darken($a, 30%);
 	}
 }

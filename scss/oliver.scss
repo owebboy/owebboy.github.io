@@ -1,5 +1,14 @@
-// Oliver CSS
+// Oliver's SCSS
+
+/// Variables
+
+$bg: #fff;
+$fg: #222;
+$a: #6C89D5;
+$logo: #57CC9E;
+
+/// Imports
+
 @import 'normalize';
 @import 'common';
-@import 'heading';
-@import 'nav';
+@import 'type';

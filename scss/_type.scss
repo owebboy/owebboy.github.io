@@ -1,0 +1,27 @@
+// type
+
+h1 {
+	font-size: 20vw;
+	font-weight: 400;
+	margin: 0;
+	letter-spacing: -10px;
+	color: $logo;
+}
+
+p {
+	margin: 0;
+	font: {
+		family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
+		size: 1em;
+		weight: 300;
+	}
+}
+
+h2 {
+	margin: 0;
+}
+
+h2 a {
+	color: $fg;
+	text-decoration: none;
+}
