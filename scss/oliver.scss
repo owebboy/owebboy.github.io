@@ -5,10 +5,12 @@
 $bg: #fff;
 $fg: #222;
 $a: #6C89D5;
+$h: #9797A6;
 $logo: #57CC9E;
 
 /// Imports
 
 @import 'normalize';
 @import 'common';
+@import 'display';
 @import 'type';

@@ -1,0 +1,41 @@
+// display
+
+/// margins
+
+header, section {
+	margin-bottom: 3em;
+}
+
+article {
+	margin-bottom: 2em;
+}
+
+.description {
+	margin-bottom: 1em;
+}
+
+
+/// grid
+
+.about, .projects {
+  display: block;
+}
+
+.heading-box {
+  float: left;
+  display: inline-block;
+  margin: 10px;
+  width: calc(100% * 1/4 - 20px);
+  @media screen and (max-width: 720px) {
+    width: 100%;
+  }
+}
+
+.body-box {
+  display: inline-block;
+  margin: 10px;
+  width: calc(100% * 3/4 - 20px);
+  @media screen and (max-width: 720px) {
+    width: 100%;
+  }
+}
