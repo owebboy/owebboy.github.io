@@ -1,6 +1,6 @@
 {
   "name": "owebboy.github.io",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "website for owebboy",
   "repository": {
     "type": "git",
@@ -18,9 +18,8 @@
   },
   "homepage": "https://github.com/owebboy/owebboy.github.io",
   "devDependencies": {
-    "concat": "^1.0.0",
-    "gulp": "^3.8.10",
-    "gulp-concat": "^2.4.3",
-    "gulp-minify-css": "^0.3.11"
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.0"
   }
 }

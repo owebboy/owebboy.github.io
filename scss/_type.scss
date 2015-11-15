@@ -1,36 +1,45 @@
 // type
 
 h1 {
-	font-size: 20vw;
-	font-weight: 400;
+	font-size: 170px;
+	letter-spacing: -.05em;
+	font-weight: 500;
 	margin: 0;
-	letter-spacing: -10px;
 	color: $logo;
 	@media screen and (max-width: 720px) {
-		letter-spacing: -1px;
+		font-size: 72px;
+	}
+}
+
+.subtitle {
+	font-size: 48px;
+	@media screen and (max-width: 720px) {
+		font-size: 32px;
 	}
 }
 
 p {
 	margin: 0;
 	font: {
-		family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
-		size: 1em;
+		family: 'helvetica neue', helvetica, arial, sans-serif;
+		size: 1.6em;
 		weight: 300;
 	}
 }
 
 h2 {
+	font-size: 1.7em;
+	font-weight: 400;
 	margin: 0;
 }
 
 h2 a {
 	color: $fg;
-	text-decoration: none;
 }
 
 .heading {
+	font-size: 1.3em;
 	margin: 0;
 	color: $h;
-	font-style: italic;
+	text-transform: uppercase;
 }

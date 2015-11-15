@@ -13,6 +13,7 @@ html {
 a {
 	color: $a;
 	transition: .5s all;
+	text-decoration: none;
 	&:hover {
 		color: darken($a, 30%);
 	}
