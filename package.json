@@ -1,6 +1,6 @@
 {
   "name": "owebboy.github.io",
-  "version": "1.1.0",
+  "version": "1.5.0",
   "description": "website for owebboy",
   "repository": {
     "type": "git",
@@ -20,6 +20,8 @@
   "devDependencies": {
     "browser-sync": "^2.10.0",
     "gulp": "^3.9.0",
-    "gulp-sass": "^2.1.0"
+    "gulp-prettify": "^0.3.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-uglifycss": "^1.0.5"
   }
 }
