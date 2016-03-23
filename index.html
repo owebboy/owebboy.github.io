@@ -16,93 +16,35 @@
     <link rel="apple-touch-icon-precomposed" href="favicon.png"> </head>
 
   <body>
-    <header>
-      <h1>owebboy</h1>
-      <p class="subtitle">Oliver M. Pope</p>
+    <header class="row"> <img class="avatar">
+      <p class="subtitle">Oliver Pope</p>
+      <p class="sub-subtitle">Developer in St. Joe, Mi</p>
     </header>
-    <section class="about">
-      <p>I build web applications using <a title="node.js" href="//nodejs.org">node.js</a>.</p>
-      <p>Tweet me: <a title="twitter username, @owebboy" href="//twitter.com/owebboy">@owebboy</a>.</p>
-      <p>Check my <a title="owebboy blog" href="/blog">blog</a> for the latest.</p>
-    </section>
-    <section class="projects">
-      <article class="project">
-        <h2><a title="hashtags" href="//hashtag.owebboy.com">hashtags</a></h2>
-        <p class="description">open-source hashtag creator using <a href="//mongoosejs.com">mongoose.js</a></p>
-        <a title="github" href="//github.com/owebboy/hashtags">
-          <svg width="33px" height="32px" viewBox="0 0 33 32">
-            <use xlink:href="github.svg#1"></use>
-          </svg>
-        </a>
-      </article>
-      <article class="project">
-        <h2><a title="minimal.css" href="//owebboy.com/minimal.css">minimal</a></h2>
-        <p class="description">ultra-apple, ultra-modern, ultra-simple. Minimal is all about 90&deg; angles and beautiful typogrpahy.</p>
-        <a title="github" href="//github.com/owebboy/minimal.css">
-          <svg width="33px" height="32px" viewBox="0 0 33 32">
-            <use xlink:href="github.svg#1"></use>
-          </svg>
-        </a>
-      </article>
-      <article class="project">
-        <h2><a title="weather app" href="//owebboy.com/weather">weather</a></h2>
-        <p class="description">check your weather from your current location</p>
-        <a title="github" href="//github.com/owebboy/weather">
-          <svg width="33px" height="32px" viewBox="0 0 33 32">
-            <use xlink:href="github.svg#1"></use>
-          </svg>
-        </a>
-      </article>
-      <article class="project">
-        <h2>
-          	  <a title="o veggie internet system" href="//owebboy.com/ovis">Vegetable Internet Systems (ovis)</a>
-	      </h2>
-        <p class="description">the future of everything</p>
-        <a title="github" href="//github.com/owebboy/ovis">
-          <svg width="33px" height="32px" viewBox="0 0 33 32">
-            <use xlink:href="github.svg#1"></use>
-          </svg>
-        </a>
-      </article>
-      <article class="project">
-        <h2>
-	          <a title="o-syntax" href="//owebboy.com/o-syntax">o-syntax</a>
-	      </h2>
-        <p class="description">the future of naming conventions</p>
-        <a title="github" href="//github.com/owebboy/o-syntax">
-          <svg width="33px" height="32px" viewBox="0 0 33 32">
-            <use xlink:href="github.svg#1"></use>
-          </svg>
-        </a>
-      </article>
-      <article class="project">
-        <h2>
-	          <a title="navbar built with sass" href="//owebboy.com/scss-navbar">scss-navbar</a>
-	      </h2>
-        <p class="description">a very nicely designed navbar, using <a href="sass-lang.com">SASS</a></p>
-        <a title="github" href="//github.com/owebboy/scss-navbar">
-          <svg width="33px" height="32px" viewBox="0 0 33 32">
-            <use xlink:href="github.svg#1"></use>
-          </svg>
-        </a>
-      </article>
-    </section>
-    <footer> <a href="https://twitter.com/owebboy" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @owebboy</a>
-      <script>
-        ! function(d, s, id)
+    <div class="body">
+      <p>blog: <a href="//owebboy.com/blog">owebboy.com/blog</a></p>
+      <p>twitter: <a href="//twitter.com/owebboy">@owebboy</a></p>
+      <p>github: <a href="//github.com/owebboy">owebboy</a></p>
+      <p>email: <a href="mailto:owebboy@gmail.com">owebboy@gmail.com</a></p>
+    </div>
+    <footer> <a href="https://twitter.com/owebboy" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @owebboy</a> </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.0.2/build/rollups/md5.js"></script>
+    <script>
+      var avatar = document.querySelector('.avatar');
+      avatar.setAttribute('src', '//gravatar.com/avatar/' + CryptoJS.MD5('owebboy@gmail.com') + '?s=200');
+      ! function(d, s, id)
+      {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id))
         {
-          var js, fjs = d.getElementsByTagName(s)[0],
-            p = /^http:/.test(d.location) ? 'http' : 'https';
-          if (!d.getElementById(id))
-          {
-            js = d.createElement(s);
-            js.id = id;
-            js.src = p + '://platform.twitter.com/widgets.js';
-            fjs.parentNode.insertBefore(js, fjs);
-          }
-        }(document, 'script', 'twitter-wjs');
-      </script>
-    </footer>
+          js = d.createElement(s);
+          js.id = id;
+          js.src = p + '://platform.twitter.com/widgets.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      }(document, 'script', 'twitter-wjs');
+    </script>
   </body>
 
 </html>
