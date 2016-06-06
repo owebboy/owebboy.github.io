@@ -1,9 +1,8 @@
 // type
-
-h1 {
+.title {
+	color: $hs;
 	font-size: 124px;
-	letter-spacing: -.05em;
-	font-weight: 300;
+	font-weight: 100;
 	margin: 0;
 	@media screen and (max-width: 720px) {
 		font-size: 72px;
@@ -11,9 +10,8 @@ h1 {
 }
 
 .subtitle {
-	font-size: 64px;
-	font-weight: 100;
-	color: $hs;
+	font-size: 50px;
+	font-weight: 300;
 	@media screen and (max-width: 720px) {
 		font-size: 32px;
 	}
@@ -22,7 +20,7 @@ h1 {
 p {
 	margin: 0;
 	font: {
-		family: 'helvetica neue', helvetica, arial, sans-serif;
+		family: "helvetica neue", arial, sans-serif;
 		size: 1.6em;
 		weight: 300;
 	}

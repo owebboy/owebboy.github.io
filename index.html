@@ -9,8 +9,12 @@
     <meta name="viewport" content="width=device-width">
     <!-- description, title, author -->
     <meta name="description" content="Oliver Pope, web developer, sixteen year old, learning life. Coding in html, css, nodejs.">
+    
+    <meta name="google-site-verification" content="oArVj0y3jrKV6dDDr_icoAAxHseRDZnhdwv4eD8Rw64" />
+    
     <meta name="author" content="Oliver Pope">
     <title>Oliver Pope, Web Developer</title>
+    
     <!-- stylesheet -->
     <link href="css/oliver.css" rel="stylesheet" type="text/css">
     <!-- favicon -->
@@ -18,21 +22,38 @@
 
   <body>
     <header class="row"> <img class="avatar">
-      <p class="subtitle">Oliver Pope</p>
-      <p class="sub-subtitle">Developer in St. Joe, Mi</p>
+      <p class="title">Oliver Pope</p>
+      <p class="subtitle">Hacker, Web Developer</p>
     </header>
     <div class="body">
+	    
+	   <p>As a seventeen year old web developer, I create and build websites to innovate and change the world.</p>
+	   
+	   <br>
+	    
       <p>blog: <a href="//owebboy.com/blog">owebboy.com/blog</a></p>
       <p>twitter: <a href="//twitter.com/owebboy">@owebboy</a></p>
       <p>github: <a href="//github.com/owebboy">owebboy</a></p>
-      <p>email: <a href="mailto:owebboy@gmail.com">owebboy@gmail.com</a></p>
+      <p>email: <a href="mailto:oliver@owebboy.com">oliver@owebboy.com</a></p>
+      
+      <br>
+      
+      <p>Some cool projects</p>
+      
+      <br>
+      
+      <p><a href="//webtype.io">webtype  - online word processor</a></p>
+      
+      <p><a href="//owebboy.com/minimal.css">minimal.css</a></p>
+      
+      
     </div>
     <footer> <a href="https://twitter.com/owebboy" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @owebboy</a> </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="//crypto-js.googlecode.com/svn/tags/3.0.2/build/rollups/md5.js"></script>
+    <script src="md5.min.js"></script>
     <script>
       var avatar = document.querySelector('.avatar');
-      avatar.setAttribute('src', '//gravatar.com/avatar/' + CryptoJS.MD5('owebboy@gmail.com') + '?s=200');
+      avatar.setAttribute('src', '//gravatar.com/avatar/' + md5('owebboy@gmail.com') + '?s=200');
       ! function(d, s, id)
       {
         var js, fjs = d.getElementsByTagName(s)[0],
