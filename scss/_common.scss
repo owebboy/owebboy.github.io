@@ -3,8 +3,9 @@
 html {
 	height: 100vh;
 	color: $fg;
+	background: linear-gradient(180deg, lighten($fg, 90%), lighten($fg, 50%));
 	font-family: sans-serif;
-	padding: 4em 20%;
+	padding: 90px;
 	@media screen and (max-width: 720px) {
 		padding: 10px;
 	}
