@@ -1,18 +1,15 @@
----
-layout: default
----
-
-<div class="home">
-
-  <div class="posts">
-    {% for post in site.posts %}
-    <div class="post">
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} <span class="spacer">:</span></span>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-    </div>
-    {% endfor %}
-  </div>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <title>owebboy - oliver pope</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <body>
+    <p class="ph3 ph5-ns ttu tracked b"><a class="link dim black-70" href="//twitter.com/owebboy">@owebboy</a></p>
+    <article class="pa3 pa5-ns">
+      <h1 class="f3 f1-m f-headline-l"><a class="link dim black" href="//oliverlog.com">oliver pope</a></h1>
+      <p class="measure lh-copy">
+        I'm a web developer who builds applications using <a class="link dim black" href="https://nodejs.org">nodejs</a> and <a class="link dim black" href="https://expressjs.com">expressjs</a>. Follow me on twitter (<a class="link dim black" href="//twitter.com/owebboy">@owebboy</a>) and <a class="link dim black" href="//github.com/owebboy">github</a>. Check out my blog at <a class="link dim black" href="//oliverlog.com">oliverlog.com</a>.
+      </p>
+    </article>
+  </body>
+</html>
